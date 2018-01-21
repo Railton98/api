@@ -167,7 +167,12 @@ return [
          * Package Service Providers...
          */
 
-        //
+        Migrator\MigrationServiceProvider::class,
+
+        /**
+         * Domains Service Providers...
+         */
+        Confee\Domains\Users\Providers\DomainServiceProvider::class,
 
         /*
          * Application Service Providers...
