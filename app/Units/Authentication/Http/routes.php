@@ -14,9 +14,5 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/', function(){
-  return [1 => 2];
+  return ['Teck\'s' => 'Railton'];
 });
-
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:api');
