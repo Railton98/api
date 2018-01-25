@@ -168,6 +168,7 @@ return [
          */
 
         Migrator\MigrationServiceProvider::class,
+        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
 
         /**
          * Domains Service Providers...
