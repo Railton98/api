@@ -3,7 +3,6 @@
 namespace Confee\Units;
 
 use Illuminate\Foundation\Http\Kernel;
-use Confee\Units\Core\Http\Middleware\AlwaysExpectsJson;
 
 class HttpKernel extends Kernel
 {
@@ -16,7 +15,7 @@ class HttpKernel extends Kernel
      */
     protected $middleware = [
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
-        AlwaysExpectsJson::class,
+        \Confee\Units\Core\Http\Middleware\AlwaysExpectsJson::class,
     ];
 
     /**
